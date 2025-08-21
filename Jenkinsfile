@@ -26,10 +26,10 @@ pipeline{
                 }
             }
         }
-        stage("quality gate"){
+        stage("quality"){
            steps {
                 script {
-                    waitForQualityGate abortPipeline: false, credentialsId: 'Sonar-token'
+                    waitForQualityGate abortPipeline: false, credentialsId: 'sonar-token'
                 }
             }
         }
