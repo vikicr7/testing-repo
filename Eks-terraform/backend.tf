@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket = "vikiterraformtest" # Replace with your actual S3 bucket name
+    bucket = "viki-buck123" # Replace with your actual S3 bucket name
     key    = "EKS/terraform.tfstate"
     region = "ap-south-1"
   }
