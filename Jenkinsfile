@@ -60,7 +60,7 @@ pipeline{
                 sh "docker rm chatbot | true"
              }
         }
-        stage('Deploy to container'){
+        stage('Deploy to box'){
             steps{
                 sh 'docker run -d --name chatbot -p 3000:3000 vikicr7/chatbot:latest'
             }
